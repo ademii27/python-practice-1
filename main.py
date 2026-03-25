@@ -6,7 +6,6 @@ price = float(input("Enter fuel price: "))
 
 fuel_cost = (distance / 100) * consumption * price
 
-# Category
 if distance < 100:
     category = "Short trip"
 elif distance < 500:
@@ -20,13 +19,13 @@ print("Distance :", distance, "km")
 print("Fuel cost :", fuel_cost,"KZT")
 print("Category :", category)
 
-# Cost breakdown
+
 print("Cost breakdown:")
 for i in range(100, int(distance)+1, 100):
     cost = (i / 100) * consumption * price
     print(i, "km →", cost)
 
-# Destination analysis
+
 print("Destination Uppercase:", destination.upper())
 print("Destination lowercase:", destination.lower())
 print("Length:", len(destination))
